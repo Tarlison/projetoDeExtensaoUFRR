@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/AppBar" />
+        app:srcCompat="@drawable/appbar" />
 
     <ImageView
         android:id="@+id/bottomBar"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/AppBarBot" />
+        app:srcCompat="@drawable/appbarbot" />
 
     <Button
         android:id="@+id/symptoms"
@@ -60,7 +60,7 @@
         android:id="@+id/menu"
         android:layout_width="34dp"
         android:layout_height="35dp"
-        android:background="@drawable/menuWhite"
+        android:background="@drawable/menuwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
@@ -108,7 +108,7 @@
         android:id="@+id/pdfDownload"
         android:layout_width="42dp"
         android:layout_height="51dp"
-        android:background="@drawable/pdfDownload"
+        android:background="@drawable/pdfdownload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.249"
