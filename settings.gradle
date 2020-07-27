@@ -1,2 +1,4 @@
 include ':app'
 rootProject.name = "My Application"
+include ':sAXRSSReader'
+include ':subProject:RSSReader'

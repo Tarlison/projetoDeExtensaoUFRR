@@ -9,24 +9,41 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+
+import nl.matshofman.saxrssreader.RssFeed;
+import nl.matshofman.saxrssreader.RssItem;
+import nl.matshofman.saxrssreader.RssReader;
 
 import static android.os.Environment.DIRECTORY_DOWNLOADS;
 import static java.lang.Package.*;
 
 public class MainActivity extends AppCompatActivity {
+    private ListView lvNews;
+    ArrayAdapter<String> adapter;
 
     private static final int PERMISSION_STORAGE_CODE = 1000 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_tela_inicial);
     }
 
     public void onClickBoletimEpidemiologico(View view) {
@@ -76,6 +93,38 @@ public class MainActivity extends AppCompatActivity {
     private void openMainActivityNumeroEmergencia() {
         Intent intent = new Intent(this,MainActivityNumeroEmergencia.class);
         startActivity(intent);
+    }
+
+    public void onClickHome(View view) {
+        openMainActivityMainTelaInicial();
+    }
+
+    private void openMainActivityMainTelaInicial(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickNoticias(View view) throws IOException, SAXException {
+        openMainActivityNoticias();
+    }
+
+    private void openMainActivityNoticias() throws IOException, SAXException {
+        setContentView(R.layout.activity_main_noticias);
+        lvNews = (ListView) findViewById(R.id.lvNews);
+        URL url = new URL("http://example.com/feed.rss");
+        RssFeed feed = RssReader.read(url);
+
+        ArrayList<RssItem> rssItems = feed.getRssItems();
+        ArrayList<String> titles = new ArrayList<String>();
+        for(RssItem rssItem : rssItems) {
+            titles.add(rssItem.getTitle());
+        }
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,titles);
+        lvNews.setAdapter(arrayAdapter);
+
+
+
+
     }
 }
 
