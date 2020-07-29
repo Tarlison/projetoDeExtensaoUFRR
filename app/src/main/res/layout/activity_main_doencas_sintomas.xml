@@ -7,6 +7,18 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/grade3"
+        android:layout_width="366dp"
+        android:layout_height="503dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@drawable/linhas" />
+
+    <ImageView
         android:id="@+id/topBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -80,6 +92,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.985" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="25dp"
+        android:text="Covid-19"
+        android:textColor="#6973e8"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/covid19"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:background="@drawable/covid_removebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

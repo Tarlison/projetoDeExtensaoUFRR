@@ -33,6 +33,18 @@
         app:srcCompat="@drawable/appbarbot" />
 
     <Button
+        android:id="@+id/mobile"
+        android:layout_width="36dp"
+        android:layout_height="59dp"
+        android:background="@drawable/mobile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+      <Button
         android:id="@+id/symptoms"
         android:layout_width="31dp"
         android:layout_height="63dp"
@@ -68,42 +80,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <Button
-        android:id="@+id/mobile"
-        android:layout_width="36dp"
-        android:layout_height="59dp"
-        android:background="@drawable/mobile"
-        android:onClick="onClickNumeroEmergencia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.754"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
 
     <Button
         android:id="@+id/graphics"
         android:layout_width="79dp"
         android:layout_height="60dp"
         android:background="@drawable/graphics"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.576" />
 
     <Button
         android:id="@+id/news"
         android:layout_width="66dp"
         android:layout_height="53dp"
         android:background="@drawable/news"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintHorizontal_bias="0.762"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.581" />
 
     <Button
         android:id="@+id/pdfDownload"
@@ -111,35 +111,35 @@
         android:layout_height="51dp"
         android:background="@drawable/pdfdownload"
         android:onClick="onClickBoletimEpidemiologico"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.249"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.925" />
 
     <Button
-        android:id="@+id/dengue"
+        android:id="@+id/medidaPreventivas"
         android:layout_width="46dp"
         android:layout_height="45dp"
         android:background="@drawable/health"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="onClickMedidasPreventivas"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.916" />
 
     <ImageView
         android:id="@+id/grade"
-        android:layout_width="366dp"
-        android:layout_height="503dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="389dp"
+        android:layout_height="567dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.72"
         app:srcCompat="@drawable/linhas" />
 
     <Button
@@ -154,7 +154,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.985" />
 
-     <Button
+    <Button
         android:id="@+id/next"
         android:layout_width="34dp"
         android:layout_height="27dp"
@@ -197,10 +197,10 @@
         android:text="Dados Epidemiológicos"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <TextView
         android:id="@+id/textView5"
@@ -209,10 +209,10 @@
         android:text="Estimativas e notícias"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <TextView
         android:id="@+id/textView6"
@@ -221,10 +221,10 @@
         android:text="Boletim epidemiológico"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.974" />
 
     <TextView
         android:id="@+id/textView7"
@@ -233,10 +233,10 @@
         android:text="Medidas preventivas"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.976" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

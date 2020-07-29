@@ -16,6 +16,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -34,18 +35,38 @@ import nl.matshofman.saxrssreader.RssReader;
 import static android.os.Environment.DIRECTORY_DOWNLOADS;
 import static java.lang.Package.*;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private ListView lvNews;
     ArrayAdapter<String> adapter;
 
     private static final int PERMISSION_STORAGE_CODE = 1000 ;
+    private Button button1;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tela_inicial);
+        button1  = (Button) findViewById(R.id.symptoms);
+        button2  = (Button) findViewById(R.id.mobile);
+
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.symptoms:
+                openMainActivityDoencasSintomas();
+                break;
+            case R.id.mobile:
+                openMainActivityNumeroEmergencia();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
+        }
+    }
     public void onClickBoletimEpidemiologico(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             if(checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED){
@@ -86,8 +107,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClickNumeroEmergencia(View view) {
-        openMainActivityNumeroEmergencia();
+
+    private void openMainActivityDoencasSintomas() {
+        Intent intent = new Intent(this,MainActivityDoencasSintomas.class);
+        startActivity(intent);
     }
 
     private void openMainActivityNumeroEmergencia() {
@@ -95,19 +118,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickHome(View view) {
-        openMainActivityMainTelaInicial();
+    public void onClickMedidasPreventivas(View view) {
+         openMainActivityMedidasPreventivas();
     }
 
-    private void openMainActivityMainTelaInicial(){
-        Intent intent = new Intent(this, MainActivity.class);
+    private void openMainActivityMedidasPreventivas() {
+        Intent intent = new Intent(this,MainActivityMedidasPreventivas.class);
         startActivity(intent);
     }
-
-    public void onClickNoticias(View view) throws IOException, SAXException {
-        openMainActivityNoticias();
-    }
-
     private void openMainActivityNoticias() throws IOException, SAXException {
         setContentView(R.layout.activity_main_noticias);
         lvNews = (ListView) findViewById(R.id.lvNews);
@@ -121,10 +139,7 @@ public class MainActivity extends AppCompatActivity {
         }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,titles);
         lvNews.setAdapter(arrayAdapter);
-
-
-
-
     }
+
 }
 

@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivityNumeroEmergencia extends AppCompatActivity {
+public class MainActivityCovid19 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_numero_emergencia);
+        setContentView(R.layout.activity_main_covid19);
     }
 }
-
-
