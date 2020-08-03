@@ -63,10 +63,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.mobile:
                 openMainActivityNumeroEmergencia();
                 break;
+            case R.id.covid19Home:
+                openMainActivityCovid19Home();
+                break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
+
+    private void openMainActivityCovid19Home() {
+        Intent intent = new Intent(this,MainActivityCovid19.class);
+        startActivity(intent);
+    }
+
     public void onClickBoletimEpidemiologico(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             if(checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED){
@@ -126,20 +135,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this,MainActivityMedidasPreventivas.class);
         startActivity(intent);
     }
-    private void openMainActivityNoticias() throws IOException, SAXException {
-        setContentView(R.layout.activity_main_noticias);
-        lvNews = (ListView) findViewById(R.id.lvNews);
-        URL url = new URL("http://example.com/feed.rss");
-        RssFeed feed = RssReader.read(url);
 
-        ArrayList<RssItem> rssItems = feed.getRssItems();
-        ArrayList<String> titles = new ArrayList<String>();
-        for(RssItem rssItem : rssItems) {
-            titles.add(rssItem.getTitle());
-        }
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,titles);
-        lvNews.setAdapter(arrayAdapter);
-    }
+//    private void openMainActivityNoticias() throws IOException, SAXException {
+//        setContentView(R.layout.activity_main_noticias);
+//        lvNews = (ListView) findViewById(R.id.lvNews);
+//        URL url = new URL("http://example.com/feed.rss");
+//        RssFeed feed = RssReader.read(url);
+//
+//        ArrayList<RssItem> rssItems = feed.getRssItems();
+//        ArrayList<String> titles = new ArrayList<String>();
+//        for(RssItem rssItem : rssItems) {
+//            titles.add(rssItem.getTitle());
+//        }
+//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,titles);
+//        lvNews.setAdapter(arrayAdapter);
+//    }
 
 }
 

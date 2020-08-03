@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="boletim_epidemiologico">Boletim epidemiológico</string>
+    <string name="noticias">Notícias</string>
+    <string name="outras_doencas_e_sintomas">Outras Doenças e Sintomas</string>
+    <string name="contatos_de_sevicos_de_saude">Contatos de seviços\nde saúde</string>
+    <string name="dados_epidemiologicos">Dados Epidemiológicos</string>
+    <string name="covid_e_sintomas">COVID e Sintomas</string>
+    <string name="topBar">TODO</string>
+    <string name="midLine">TODO</string>
+    <string name="h1Line">TODO</string>
+    <string name="h2Line">TODO</string>
+    <string name="Doencas_e_Sintomas">Doenças e Sintomas</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="numeros">Contatos de Serviços de Saúde</string>
 </resources>
