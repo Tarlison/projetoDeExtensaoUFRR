@@ -9,31 +9,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.Toast;
-
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-
-import nl.matshofman.saxrssreader.RssFeed;
-import nl.matshofman.saxrssreader.RssItem;
-import nl.matshofman.saxrssreader.RssReader;
-
-import static android.os.Environment.DIRECTORY_DOWNLOADS;
-import static java.lang.Package.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private ListView lvNews;
@@ -72,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openMainActivityCovid19Home() {
-        Intent intent = new Intent(this,MainActivityCovid19.class);
+        Intent intent = new Intent(this, MainActivityCovid19Home.class);
         startActivity(intent);
     }
 
@@ -132,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openMainActivityMedidasPreventivas() {
-        Intent intent = new Intent(this,MainActivityMedidasPreventivas.class);
+        Intent intent = new Intent(this, MainActivityCovid19Preventions.class);
         startActivity(intent);
     }
 

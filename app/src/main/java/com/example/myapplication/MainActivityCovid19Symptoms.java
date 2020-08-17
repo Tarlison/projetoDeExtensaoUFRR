@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivityMedidasPreventivas extends AppCompatActivity {
+public class MainActivityCovid19Symptoms extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_medidas_preventivas);
+        setContentView(R.layout.activity_main_covid19_symptoms);
     }
 }

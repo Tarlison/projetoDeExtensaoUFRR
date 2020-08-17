@@ -5,7 +5,7 @@
     <string name="outras_doencas_e_sintomas">Outras Doenças e Sintomas</string>
     <string name="contatos_de_sevicos_de_saude">Contatos de seviços\nde saúde</string>
     <string name="dados_epidemiologicos">Dados Epidemiológicos</string>
-    <string name="covid_e_sintomas">COVID e Sintomas</string>
+    <string name="covid_e_sintomas">COVID-19</string>
     <string name="topBar">TODO</string>
     <string name="midLine">TODO</string>
     <string name="h1Line">TODO</string>
@@ -13,4 +13,8 @@
     <string name="Doencas_e_Sintomas">Doenças e Sintomas</string>
     <string name="menu_principal">Menu Principal</string>
     <string name="numeros">Contatos de Serviços de Saúde</string>
+
+    <string name="menu_covid19">Covid-19</string>
+    <string name="medidas_preventivas">Covid -19 - Medidas Preventivas</string>
+    <string name="sintomas">Covid-19 - Principais Sintomas</string>
 </resources>
