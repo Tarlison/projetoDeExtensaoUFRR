@@ -13,10 +13,13 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivityCovid19Symptoms"></activity>
+        <activity android:name=".MainActivityAidsPreventions"></activity>
+        <activity android:name=".MainActivityAidsSymptoms" />
+        <activity android:name=".MainActivityAidsHome" />
+        <activity android:name=".MainActivityCovid19Symptoms" />
         <activity android:name=".MainActivityCovid19Home" />
         <activity android:name=".MainActivityCovid19Preventions" />
-        <activity android:name=".MainActivityDoencasSintomas" />
+        <activity android:name=".MainActivityOutrasDoencas" />
         <activity android:name=".MainActivityNumeroEmergencia" />
         <activity android:name=".MainActivityNoticias" />
         <activity android:name=".MainActivity">

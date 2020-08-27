@@ -24,16 +24,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final int PERMISSION_STORAGE_CODE = 1000 ;
     private Button button1;
     private Button button2;
+    private Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_tela_inicial);
+        setContentView(R.layout.activity_main);
         button1  = (Button) findViewById(R.id.symptoms);
         button2  = (Button) findViewById(R.id.mobile);
+        button3 =  (Button) findViewById(R.id.covid19Home);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+
     }
 
     @Override
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void openMainActivityDoencasSintomas() {
-        Intent intent = new Intent(this,MainActivityDoencasSintomas.class);
+        Intent intent = new Intent(this, MainActivityOutrasDoencas.class);
         startActivity(intent);
     }
 

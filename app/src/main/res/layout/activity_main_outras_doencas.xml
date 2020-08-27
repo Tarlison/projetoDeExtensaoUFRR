@@ -146,29 +146,30 @@
         android:layout_marginEnd="51dp"
         android:layout_marginRight="51dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Covid-19"
+        android:text="AIDS"
         android:textColor="#16085b"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378" />
+        app:layout_constraintVertical_bias="0.37" />
 
     <Button
-        android:id="@+id/covid19"
-        android:layout_width="79dp"
-        android:layout_height="74dp"
+        android:id="@+id/aids"
+        android:layout_width="70dp"
+        android:layout_height="85dp"
         android:layout_marginEnd="51dp"
         android:layout_marginRight="51dp"
-        android:background="@drawable/covid_removebg"
+        android:background="@drawable/aids"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintVertical_bias="0.245" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
