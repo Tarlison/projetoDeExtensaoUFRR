@@ -15,6 +15,9 @@
     <string name="numeros">Contatos de Serviços de Saúde</string>
 
     <string name="menu_covid19">Covid-19</string>
+    <string name="menu_raiva">Raiva</string>
     <string name="medidas_preventivas">Covid -19 - Medidas Preventivas</string>
+    <string name="raiva_medidas_preventivas">Raiva - Medidas Preventivas</string>
+    <string name="raiva_sintomas">Raiva - Principais Sintomas</string>
     <string name="sintomas">Covid-19 - Principais Sintomas</string>
 </resources>

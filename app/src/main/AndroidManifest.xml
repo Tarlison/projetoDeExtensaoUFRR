@@ -16,6 +16,9 @@
         <activity android:name=".MainActivityAidsPreventions"></activity>
         <activity android:name=".MainActivityAidsSymptoms" />
         <activity android:name=".MainActivityAidsHome" />
+        <activity android:name=".MainActivityRaivaHome"/>
+        <activity android:name=".MainActivityRaivaSymptoms"/>
+        <activity android:name=".MainActivityRaivaPreventions"/>
         <activity android:name=".MainActivityCovid19Symptoms" />
         <activity android:name=".MainActivityCovid19Home" />
         <activity android:name=".MainActivityCovid19Preventions" />

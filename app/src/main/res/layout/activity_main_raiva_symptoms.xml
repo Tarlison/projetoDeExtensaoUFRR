@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:contentDescription="secondBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/navigation_bar_6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appbar" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:background="@drawable/compartilhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:background="@drawable/menuwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/raiva_sintomas"
+        android:textColor="#FFFF"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Náuseas"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Irritabilidade "
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Dor na garganta"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.158"
+        app:srcCompat="@drawable/bravo" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="14dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/midLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/linha_1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="385dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/h2Line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linha_3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/dordegarganta" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="171dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.732"
+        app:srcCompat="@drawable/nausea" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="171dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.741"
+        app:srcCompat="@drawable/dor_de_cabeca" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cefaléia"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

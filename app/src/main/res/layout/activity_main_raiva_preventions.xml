@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:contentDescription="secondBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/navigation_bar_6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appbar" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:background="@drawable/compartilhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:background="@drawable/menuwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/raiva_medidas_preventivas"
+        android:textColor="#FFFF"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Fique longe de animais silvestres"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Vacinação de animais"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cuidado com Morcegos"
+        android:textColor="#16085b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:srcCompat="@drawable/rabiesvacination" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="14dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/midLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/linha_1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="385dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/h2Line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linha_3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:srcCompat="@drawable/morcego" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="180dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:srcCompat="@drawable/silvestres" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

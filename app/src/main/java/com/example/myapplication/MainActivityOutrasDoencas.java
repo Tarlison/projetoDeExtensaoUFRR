@@ -9,7 +9,7 @@ package com.example.myapplication;
 
 public class MainActivityOutrasDoencas extends AppCompatActivity implements View.OnClickListener {
 
-    private Button button1;
+    private Button button1, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,10 @@ public class MainActivityOutrasDoencas extends AppCompatActivity implements View
         setContentView(R.layout.activity_main_outras_doencas);
 
         button1  = (Button) findViewById(R.id.aids);
+        button2 = (Button) findViewById(R.id.raiva);
+
         button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
     }
 
     @Override
@@ -26,6 +29,9 @@ public class MainActivityOutrasDoencas extends AppCompatActivity implements View
             case R.id.aids:
                 openMainActivityAidsHome();
                 break;
+            case R.id.raiva:
+                openMainActivityRaivaHome();
+                break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
         }
@@ -33,6 +39,11 @@ public class MainActivityOutrasDoencas extends AppCompatActivity implements View
 
     private void openMainActivityAidsHome() {
         Intent intent = new Intent(this, MainActivityAidsHome.class);
+        startActivity(intent);
+    }
+
+    private void openMainActivityRaivaHome(){
+        Intent intent = new Intent(this, MainActivityRaivaHome.class);
         startActivity(intent);
     }
 
