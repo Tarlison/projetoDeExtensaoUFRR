@@ -13,8 +13,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/sAXRSSReader" />
-            <option value="$PROJECT_DIR$/subProject" />
-            <option value="$PROJECT_DIR$/subProject/RSSReader" />
+            <option value="$PROJECT_DIR$/subproject" />
+            <option value="$PROJECT_DIR$/subproject/RSSReader" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

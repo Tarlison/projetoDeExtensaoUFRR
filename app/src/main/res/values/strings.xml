@@ -22,4 +22,6 @@
     <string name="raiva_sintomas">Raiva - Principais Sintomas</string>
     <string name="hiv_sintomas">HIV - Principais Sintomas</string>
     <string name="covid_sintomas">Covid-19 - Principais Sintomas</string>
+    <string name="pre_cadastro_individual">Pré Cadastro Individual</string>
+
 </resources>
